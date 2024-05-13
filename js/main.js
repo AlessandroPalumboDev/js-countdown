@@ -10,10 +10,19 @@ const countdownInterval = setInterval(function () {
     // Decremento il contatore
     countdown--;
 
-    // quando arriva a 0 viene interrotto da clearInteral()
+    // quando arriva a 0 viene interrotto da clearInterval()
     if (countdown < 0) {
-        clearInterval(countdownInterval);
-        // Stampa messaggio
-        document.getElementById('countdown').innerText = ('Buon anno!');
+        stopCountdown();
     }
 }, 1000);
+
+let stop = document.getElementById('stop');
+
+stop.addEventListener('click', stopCountdown)
+
+function stopCountdown() {
+    // Interrompo countdown
+    clearInterval(countdownInterval);
+    // Stampa messaggio
+    document.getElementById('countdown').innerText = ('Buon anno!');
+};
