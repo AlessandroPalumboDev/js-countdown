@@ -6,7 +6,7 @@ let countdown = 10;
 // Definisco la variabile di setInterval() di un secondo per avviare un countdown con una funzione anonima
 const countdownInterval = setInterval(function () {
     // Stampo in console a ogni interazione
-    console.log(countdown);
+    document.getElementById('countdown').innerText = countdown;
     // Decremento il contatore
     countdown--;
 
@@ -14,7 +14,6 @@ const countdownInterval = setInterval(function () {
     if (countdown < 0) {
         clearInterval(countdownInterval);
         // Stampa messaggio
-        console.log('Buon anno!');
-        alert('Buon anno!');
+        document.getElementById('countdown').innerText = ('Buon anno!');
     }
 }, 1000);

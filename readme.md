@@ -12,3 +12,7 @@ Aggiungete un bottone che interrompe il count down e mostra il messaggio;
     - Stampo in console a ogni interazione
     - quando arriva a 0 viene interrotto da clearInteral()
     - Stampa messaggio
+
+BONUS 1
+- Creo un titolo e un sottotitolo vuoto con un ID 'countdown' sul file html
+- Sostituisco i console.log con la modifica del sottotitolo e rimuovo l' alert
