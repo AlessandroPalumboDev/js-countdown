@@ -1,5 +1,9 @@
 'use strict';
 
+let stop = document.getElementById('stop');
+console.log(stop);
+
+
 // Creo variabile contdown con valore 10
 let countdown = 10;
 
@@ -16,9 +20,7 @@ const countdownInterval = setInterval(function () {
     }
 }, 1000);
 
-let stop = document.getElementById('stop');
-
-stop.addEventListener('click', stopCountdown)
+stop.addEventListener('click', stopCountdown);
 
 function stopCountdown() {
     // Interrompo countdown
